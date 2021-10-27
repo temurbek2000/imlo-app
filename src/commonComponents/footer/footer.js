@@ -6,7 +6,7 @@ import {
 class FooterComponent extends React.Component{
     render() {
         return (
-            <div className="p-3" style={{width:'100%',minHeight:'150px',backgroundColor:'black'}}>
+            <div className="p-3 " style={{width:'100%',borderRadius:'5px',minHeight:'150px',backgroundColor:'black'}}>
               <Container>
                   <div className="d-flex p-4">
                       <p style={{color:'white',fontSize:'22px',fontWeight:'bold'}}>
