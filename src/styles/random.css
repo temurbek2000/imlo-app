@@ -1,0 +1,22 @@
+.random-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.know-button{
+    font-weight: normal;
+    font-size: 20px;
+    background: limegreen;
+    color: white;
+    border: none;
+}
+.know-button:focus{
+    color: white;
+}
+.random-title,.random-word-mean{
+    color: limegreen;
+}
+.random-word-mean{
+    transition: 0.2s all;
+}

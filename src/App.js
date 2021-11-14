@@ -11,9 +11,18 @@ import {
 } from 'antd'
 import {routes} from "./routes/routes";
 import HomePage from "./pages/home/home";
+import Loader from "./commonComponents/loader/loader";
 class App extends React.Component{
+    state = {
+        loading: true
+    };
+
+    demoAsyncCall() {
+        return new Promise((resolve) => setTimeout(() => resolve(), 1000));
+    }
     componentDidMount() {
-        document.title="ImloManbai"
+        document.title="ImloManbai";
+        this.demoAsyncCall().then(() => this.setState({ loading: false }));
     }
 
     render() {
@@ -24,6 +33,8 @@ class App extends React.Component{
 
             <Router>
                 <Switch>
+                    {
+                        this.state.loading? <Loader/>:
 
                     <Row>
                         {
@@ -36,6 +47,7 @@ class App extends React.Component{
                         }
 
                     </Row>
+                    }
 
                     <Redirect from="/" to="/home" />
                 </Switch>

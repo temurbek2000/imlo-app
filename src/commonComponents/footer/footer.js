@@ -12,9 +12,9 @@ class FooterComponent extends React.Component{
                       <p style={{color:'white',fontSize:'22px',fontWeight:'bold'}}>
                           Copyright © 2021 . Imlo Manbai
                          <div className="d-flex text-center">
-                             <p style={{color:'white',fontSize:'18px',fontWeight:600}}>
-                                 Designed by <a href="http://t.me/IBRAGIMOV_ULUGBEK_2">Ibragimova Shakhnoza</a> <br/>
-                                 Programmer <a href="http://t.me/temurbek1401">Temurbek Ismoilov</a>
+                             <p className={'text-center'} style={{color:'white',fontSize:'18px',fontWeight:600,textAlign:'center'}}>
+                                 Designed by <a href="http://t.me/IBRAGIMOV_ULUGBEK_2">Ibragimova Shakhnoza</a> and <br/>
+                                  <a href="http://t.me/temurbek1401">Temurbek Ismoilov</a>
                              </p>
                          </div>
                       </p>

@@ -15,13 +15,13 @@ import {
     Row,
     Col
 } from 'react-bootstrap'
-class NavbarComponent extends React.Component{
+class NavModeratorMenu extends React.Component{
     render() {
         return (
             <div>
                 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                     <Container>
-                        <Navbar.Brand href="#home"><p className="fw-bold m-2" style={{color:"lightgrey",fontSize:'25px'}}>ImloManbai</p></Navbar.Brand>
+                        <Navbar.Brand href="#home"><p className="fw-bold m-2" style={{color:"lightgrey",fontSize:'25px'}}>IM Moderator</p></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="me-auto">
@@ -29,15 +29,12 @@ class NavbarComponent extends React.Component{
                                     <FaHome className="mt-1 m-1" style={{fontWeight:'bold',fontSize:'20px'}}/><b>Bosh sahifa</b>
 
                                 </div></Nav.Link>
-                                <Nav.Link href="/random"><div className="d-flex ">
-                                    <FaPlay className="mt-1 m-1" style={{fontWeight:'bold',fontSize:'20px'}}/><b>Rotatsiya</b>
-                                </div></Nav.Link>
-                                <Nav.Link href="/search"><div className="d-flex ">
-                                    <FaSearch className="mt-1 m-1" style={{fontWeight:'bold',fontSize:'20px'}}/><b>So'z qidirish</b>
+                                <Nav.Link href="/word-add"><div className="d-flex ">
+                                    <FaPlay className="mt-1 m-1" style={{fontWeight:'bold',fontSize:'20px'}}/><b>So'zlar</b>
                                 </div></Nav.Link>
 
-                                <Nav.Link href="/login"><div className="d-flex ">
-                                    <FaUserAlt className="mt-1 m-1" style={{fontWeight:'bold',fontSize:'20px'}}/><b>Kirish</b>
+                                <Nav.Link href="/"><div className="d-flex ">
+                                    <FaUserAlt className="mt-1 m-1" style={{fontWeight:'bold',fontSize:'20px'}}/><b>Hisobot</b>
                                 </div></Nav.Link>
 
                                 <Nav.Link href="#"><div className="d-flex ">
@@ -54,4 +51,4 @@ class NavbarComponent extends React.Component{
         );
     }
 }
-export default NavbarComponent;
+export default NavModeratorMenu;
